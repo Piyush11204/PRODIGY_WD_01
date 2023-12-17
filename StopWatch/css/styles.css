@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+h1 {
+    width: 600px;
+    font-size: 60px;
+    text-shadow: 7px 7px rgba(2, 107, 255, 0.274);
+    user-select: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #001366;
+    
+    text-align: center;
+}
+
+
+button {
+    padding: 50px 1px;
+    margin: 15px 30px;
+    border-radius: 70px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    flex: 1;
+   
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    font-family: "Roboto Mono", monospace;
+    padding: 0px 15px;
+    border-radius: 50px;
+    margin: 30px 0px;
+    font-size: 46px;
+    background: #fffbfb;
+    user-select: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+
+}
+
+ul,
+li {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+li:first-child {
+    margin-top: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px 0;
+    background-color: #fff460a4;
+    border: 3px solid #ecfd01;
+    color: #000000;
+    padding: 10px;
+    border-radius: 12px 12px 50px 50px;
+    font-family: "Urbanist extarbold", sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.watch_container {
+    max-width: 600px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #24aae9;
+    padding: 1.5rem 3rem;
+    
+    height: 80%;
+}
+
+.button_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stoptime_display {
+    width: 100%;
+    margin-top: 40px;
+    overflow-y: auto;
+}
+
+#time {
+    border: 3px solid #000000;
+    border-radius: 30px;
+}
+
+
+#start {
+    background-color: #d8f3dc;
+    border: 3px solid #40916c;
+    color: #2d6a4f;
+}
+
+#start:hover {
+    box-shadow: 0px 0px 15px 15px #38a169;
+}
+
+#reset {
+    background-color: #dbf6fc;
+    border: 3px solid #0077b6;
+    color: #023e8a;
+}
+
+#reset:hover {
+    box-shadow: 0px 0px 15px 15px #48cae4;
+}
+
+#stop {
+    background-color: #fff0f3;
+    border: 3px solid #c9184a;
+    color: #800f2f;
+}
+
+#stop:hover {
+    box-shadow: 0px 0px 15px 15px #ff758f;
+}
+
+#centisecond {
+    font-size: 28px;
+}
+
+@media screen and (max-width:600px) {
+
+    .watch_container {
+        margin-top: 30px;
+        width: 90%;
+        max-width: unset;
+        height: 95%;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+        border-radius: 5px;
+        margin: 15px 0px;
+        font-size: 36px;
+    }
+
+
+    button {
+        padding: 13px 0;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .button_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #centisecond {
+        font-size: 35px;
+    }
+
+}
+
+
+
+@media screen and (max-width:400px) {
+
+    .watch_container {
+        width: 95%;
+        max-width: unset;
+        padding: 1.5rem 0;
+        align-items: center;
+
+    }
+
+    p {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 15px auto;
+        font-size: 30px;
+        width: unset;
+    }
+
+    #centisecond {
+        font-size: 30px;
+    }
+}
